@@ -5,6 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Kristi");
 html {
   line-height: 1.15;
   /* 1 */
@@ -339,4 +342,538 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+/* ----- CONFIGURATION ----- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* ----- TYPOGRAPHIES ----- */
+.title {
+  font-family: 'Kristi', cursive;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.title__center {
+  text-align: center;
+  color: #E32322;
+  padding-bottom: 25px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.container {
+  max-width: 920px !important;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+body p {
+  font-size: 1em;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em !important;
+  margin: 0em !important;
+}
+
+h2 {
+  font-size: 2em;
+  color: #E32322;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #E32322;
+}
+
+/* ----- HEADER ----- */
+.header__home {
+  background-image: url(../img/accueilheader.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+header .navbar {
+  background-color: #ffffff;
+}
+
+header nav .nav-item .active {
+  color: #FA5032 !important;
+  font-weight: bold;
+}
+
+header nav .nav-item a:hover {
+  color: #E35B22 !important;
+}
+
+header nav li {
+  text-transform: uppercase;
+  list-style: none;
+  float: left;
+  padding: 0px 10px;
+}
+
+header nav ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+}
+
+header p {
+  margin-bottom: 0  !important;
+}
+
+header .text__header {
+  background-color: #131313;
+  color: white;
+  width: 15%;
+  min-width: 180px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  top: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .text__header .name {
+  padding: 7px;
+  color: #E32322;
+}
+
+header .restaurant {
+  background-color: #E32322;
+  color: #131313;
+  font-weight: bold;
+}
+
+.navbar {
+  z-index: 999;
+}
+
+/* ----- ACCUEIL ----- */
+.img__ramen {
+  max-width: 230px;
+  width: 60%;
+  position: relative;
+  padding-top: 52px;
+}
+
+.img__maki {
+  max-width: 160px;
+  width: 40%;
+  position: absolute;
+  left: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  .img__maki {
+    max-width: 150px;
+    width: 30%;
+    left: 35%;
+  }
+  .img__ramen {
+    max-width: 190px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .img__suma {
+    padding-top: 20px;
+  }
+}
+
+.img__suma {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.numbers {
+  position: relative;
+  color: #131313 !important;
+  text-align: center;
+}
+
+.numbers:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/food2.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.65;
+}
+
+.numbers .border {
+  border: 1px solid #E35B22 !important;
+  margin: 10px;
+}
+
+.numbers span {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.numbers h2:before, .numbers h2:after {
+  content: '';
+  width: 10%;
+  border-bottom: black solid;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.numbers h2:before {
+  margin-right: 2em;
+}
+
+.numbers h2:after {
+  margin-left: 2em;
+}
+
+.card-block {
+  padding: 10px;
+}
+
+.panels .card:nth-child(1) {
+  margin-top: 20px;
+}
+
+.panels .card:nth-child(2) {
+  margin-top: 20px;
+}
+
+.jumbotron {
+  background-color: #ffffff !important;
+  margin-top: 30px;
+  padding: 0;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  background-color: #131313;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #FA5032;
+}
+
+footer ul {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+  margin: 5px;
+}
+
+footer .fab {
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  color: #E35B22;
+}
+
+footer .fab:hover {
+  color: #131313;
+}
+
+/* ----- CARTE ----- */
+.carte {
+  margin: 0 15px;
+}
+
+.carte a {
+  color: #E35B22;
+  font-weight: bold;
+}
+
+.carte .fond__carte {
+  border: 1px solid #131313;
+  margin: 0 10px;
+}
+
+.carte .menu {
+  margin-bottom: 15px;
+}
+
+.carte .menu p {
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.carte .menu h2 {
+  text-align: center;
+}
+
+.carte .menu h3 {
+  padding-right: 15px;
+  float: left;
+}
+
+.carte .menu .price {
+  display: block;
+  position: absolute;
+  background-color: white;
+  font-weight: bold;
+}
+
+.carte .menu .badge {
+  margin-top: 10px;
+}
+
+.carte .menu_section {
+  margin-bottom: 30px;
+}
+
+.carte .menu_item {
+  position: relative;
+}
+
+.carte h2 {
+  background-color: #131313;
+  padding: 10px  0;
+}
+
+.carte .nav-pills .nav-link.active, .carte .nav-pills .show > .nav-link {
+  border-radius: 0%;
+  background-color: #FA5032;
+  color: #ffffff;
+}
+
+.carte ul {
+  margin-bottom: 0px !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.carte ul li {
+  width: 20%;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .carte .nav-pagi {
+    display: block !important;
+    color: black;
+  }
+  .carte .nav-pagi .nav-item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .carte .menu .price {
+    position: static;
+  }
+  .carte h3 {
+    float: none !important;
+  }
+  .carte .menu_title {
+    text-align: center;
+  }
+  .carte .menu_section h3 {
+    text-align: center;
+  }
+  .carte .menu_item {
+    text-align: center;
+  }
+  .carte .nav-item {
+    float: none !important;
+    color: red;
+  }
+}
+
+/* ----- RESTAURANTS ----- */
+.maps {
+  width: 100%;
+  max-height: 300px;
+}
+
+.section__maps {
+  margin: 30px 10px;
+  padding: 10px;
+}
+
+.section__maps p {
+  margin-bottom: 0.3em;
+}
+
+.section__maps .row:nth-child(2) {
+  padding-bottom: 10px !important;
+}
+
+.section__maps .row:nth-child(3) {
+  padding-bottom: 10px !important;
+}
+
+/* ----- CONTACT ----- */
+.form-control, select, textarea {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  border: none !important;
+  -webkit-box-shadow: 1px 1px 2px #131313 inset;
+          box-shadow: 1px 1px 2px #131313 inset;
+}
+
+.form-control:hover, .form-control:focus, .form-control:active:focus, select:hover, select:focus, select:active:focus, textarea:hover, textarea:focus, textarea:active:focus {
+  color: #E35B22;
+  border-bottom: 1px solid #ff5722;
+}
+
+.form-control:hover::-webkit-input-placeholder, .form-control:focus::-webkit-input-placeholder, .form-control:active:focus::-webkit-input-placeholder, select:hover::-webkit-input-placeholder, select:focus::-webkit-input-placeholder, select:active:focus::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, textarea:active:focus::-webkit-input-placeholder {
+  color: #ff5722;
+  position: relative;
+}
+
+.form-control:hover:-ms-input-placeholder, .form-control:focus:-ms-input-placeholder, .form-control:active:focus:-ms-input-placeholder, select:hover:-ms-input-placeholder, select:focus:-ms-input-placeholder, select:active:focus:-ms-input-placeholder, textarea:hover:-ms-input-placeholder, textarea:focus:-ms-input-placeholder, textarea:active:focus:-ms-input-placeholder {
+  color: #ff5722;
+  position: relative;
+}
+
+.form-control:hover::-ms-input-placeholder, .form-control:focus::-ms-input-placeholder, .form-control:active:focus::-ms-input-placeholder, select:hover::-ms-input-placeholder, select:focus::-ms-input-placeholder, select:active:focus::-ms-input-placeholder, textarea:hover::-ms-input-placeholder, textarea:focus::-ms-input-placeholder, textarea:active:focus::-ms-input-placeholder {
+  color: #ff5722;
+  position: relative;
+}
+
+.form-control:hover::placeholder, .form-control:focus::placeholder, .form-control:active:focus::placeholder, select:hover::placeholder, select:focus::placeholder, select:active:focus::placeholder, textarea:hover::placeholder, textarea:focus::placeholder, textarea:active:focus::placeholder {
+  color: #ff5722;
+  position: relative;
+}
+
+form {
+  padding: 0 20px;
+}
+
+.btn-envoie {
+  margin-left: auto;
+  margin-right: auto;
+  display: block !important;
+  width: 15%;
+  min-width: 130px;
+}
+
+.form__style {
+  position: relative;
+  padding-left: 20px;
+  color: #858585;
+  font-weight: lighter;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.form-control {
+  border: 1px solid #ff5722 !important;
+}
+
+/* ----- PHOTOS ----- */
+.sec__photos .img__pagi {
+  width: 100%;
+  height: auto;
+}
+
+.sec__photos .nav-pills .nav-link.active, .sec__photos .nav-pills .show > .nav-link {
+  border-radius: 100%;
+  max-width: 45px;
+  display: inline-block;
+}
+
+.sec__photos .nav-pagi {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  width: 170px;
+}
+
+.sec__photos .nav-item {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.sec__photos .nav-item a {
+  color: #E35B22;
+}
+
+.sec__photos .nav-pills .nav-link.active, .sec__photos .nav-pills .show > .nav-link {
+  background-color: #E35B22;
+}
+
+@media screen and (max-width: 576px) {
+  .sec__photos .img__pagi {
+    max-width: 300px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sec__photos .img__pagi:nth-child(1) {
+    margin-bottom: 40px;
+  }
+  .sec__photos .nav-item {
+    width: 50px !important;
+  }
+}
+
+.photos__text {
+  padding: 30px 0;
 }
