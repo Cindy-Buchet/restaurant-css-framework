@@ -1,6 +1,22 @@
 # Projet site web d'un restaurant: Japan House
 > https://cindy-buchet.github.io/restaurant-css-framework/
 
+Ce projet a été réalisé pendant ma formation BeCode à Charleroi du 15 au 20 mai 2019. C'est le dernier projet de la prairie. La prairie est le premier mois effectué à la formation, où nous prenons en main le HTML/CSS (l'intégration).
+
+**SOMMAIRE**
+
+* [Mission](#Mission)
+* [Les demandes](#Les-demandes)
+* [Choix de design](#Choix-de-design)
+    * [Typographies](#Typographies)
+        * [Tailles de typographies](#Tailles-de-typographies)
+    * [Couleurs](#Couleurs)
+    * [Mise en place des éléments](#Mise-en-place-des-éléments)
+* [Le code](#Le-code)
+* [Difficultées rencontrées](#Difficultées-rencontrées)
+* [Mon avis sur ce projet](#Mon-avis-sur-ce-projet)
+
+
 ## Mission
 
 La mission était de réaliser la vitrine d'un restaurant. Nous devions inventer tout de A à Z. Penser au design: les mises en places des éléments, les choix de couleurs, de typographies, ... Et enfin, le coder !
@@ -85,9 +101,9 @@ J'ai configuré 5 couleurs en tout. C'est les seuls couleurs que j'utilise dans 
 
 Le 'redlight' est surtout utilisé pour les petits éléments comme border, les boutons, ...
 
-Le 'reddark' est utilisé pour les titres
+Le 'reddark' est utilisé pour les titres.
 
-Le 'orange' est utilisé pour les onglets dans le menu
+Le 'orange' est utilisé pour les onglets dans le menu.
 
 Et enfin le dark est utilisé pour la couleur des textes, c'est une couleur noir mais un tout petit peu plus clair et le white est utilisé comme couleur de fond du site.
 
@@ -95,9 +111,24 @@ Et enfin le dark est utilisé pour la couleur des textes, c'est une couleur noir
 J'ai gardé le même système de colonnes sur toutes mes pages: soit une div qui prend toute la longueur, soit la page est divisé en deux ou trois colonnes égales entre elles. Ca évite de partir sur des colonnes différentes (par exemple une section avec une colonne qui fait 1/4 et l'autre 3/4 et partir après sur une section de 2/5 et 2/5 et 1/5). Je préfère quand mon site est bien structuré.
 
 ## Le code
+J'ai travaillé avec SASS (Oh SASS, mon grand ami!). J'ai configuré mon SASS pour pouvoir créer plusieurs fichiers SCSS et ainsi travailler plus proprement en me retrouvant plus facilement car quand on a plusieurs pages, on se trouve facilement avec pleins de ligne css et vive le bordel après... J'ai configuré SASS pour qu'il me génère tout mon code sur un seul fichier css. Quel magie ce SASS.
+
+Et comme demandé dans l'exercice, j'ai travaillé avec Bootstrap. Je trouve Bootstrap très pratique surtout pour ce qui concerne le responsive grâce au système de colonnes qui adapte tout seul le responsive. Ca évite de passer par des media queries où on se prend très facilement la tête. En plus, Bootstrap a déjà des trucs qui se font tout seul comme la navbar adapté en responsive, les panels, ...
 
 ## Difficultées rencontrées
+Etant donné que j'avais déjà fait ma VCard avec Bootstrap, je savais déjà un peu comment ça fonctionnait. Mais grâce à ce projet, j'ai pu découvrir que Bootstrap proposait autre chose que le système de colonnes. 
+
+Adoptez Bootstrap, ça changera votre vie!
+
+Une des difficultés que j'ai rencontré, c'est qu'une fois que je bougeais le css d'une div dans une page, quand j'allais dans une autre je voyais des bugs qu'il n'y avait pas avant. Alors, pour régler ce soucis, j'ai mit une class qui englobe toute la partie que je voulais modifier et grâce au SASS, j'ai pu travailler plus proprement. Maintenant, je sais comment éviter ces problèmes à l'avenir!
+
+J'ai aussi galéré à faire les paginations sans devoir passer par du JavaScript, mais après plusieurs heures de recherches (comment perdre du temps) j'ai enfin trouvé une solution: la nav.
 
 ## Mon avis sur ce projet
+
+Comme dit ci-dessus, j'adore Bootstrap! Faire ce projet, ça m'a vraiment plu car j'ai pu découvrir de nouvelles fonctionnalitées que je ne connaisssais pas. 
+
+En plus, à pars les 2/3 contraintes, on était vraiment libre de faire ce qu'on voulait dans le site, alors on apprécie plus facilement ce qu'on fait vu qu'on peut prendre ce qu'on aime (A pars que ça donnait faim de voir des sushis et ramens partout).
+
 
 ![Soulagée](https://i.giphy.com/media/JMV7IKoqzxlrW/giphy.webp)
