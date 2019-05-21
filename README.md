@@ -27,7 +27,7 @@ Nous ne pouvions pas tout choisir de nous-même, nous avons eu des consignes à 
 1. Le site devait être responsive (adapté pour tout les écrans)
 2. Faire 5 pages accessibles via le menu (navbar) : Accueil, Carte, Photos, Restaurants et Contact.
 3. Sur chaque page, nous avions des consignes:
-    1* **Accueil** : 
+    * **Accueil** : 
         * Un composant Jumbotron
         * Deux panneaux / panels de news
     * **Carte** :
